@@ -1,0 +1,119 @@
+@font-face {
+	font-family: "Kaushan Script";
+	src: url("assets/fonts/Kaushan_Script/KaushanScript-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url(assets/fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: #7ea5d9;
+}
+
+aside {
+	position: fixed;
+	width: 10%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+aside.left {
+	left: 0;
+	top: 0;
+}
+aside.right {
+	right: 0;
+	top: 0;
+}
+aside.left img, aside.right img {
+	height: 25%;
+}
+
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+	height: 100%;
+}
+
+h1 {
+	font-family: "Kaushan Script", sans-serif;
+	font-size: 50px;
+	line-height: 100%;
+}
+.dropArea {
+	margin-top: 75px;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 850px;
+	padding: 20px;
+	background: #6388ba;
+	border-radius: 20px;
+
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+}
+.empty {
+	min-height: 70vh;
+}
+
+.dropArea h2 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+.dropArea p {
+	font-size: 25px;
+	margin: 20px;
+}
+
+input#file {
+	display: none;
+}
+
+.inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	border: 2px dashed #3b5982;
+	border-radius: 10px;
+}
+.inner .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.inner .text img {
+	width: 20%;
+	margin-bottom: 30px;
+}
+.inner .text label {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+}
+.inner .text label:hover {
+	cursor: pointer;
+	color: #89aee0;
+}
